@@ -3,144 +3,176 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>CyberEdu Connected Campus Program</title>
+<title>CyberEdu v2 - School Technology Assessment</title>
 <style>
 body{font-family:Arial,sans-serif;background:#f4f7fb;margin:0;padding:20px;color:#243447}
-.container{max-width:800px;margin:auto;background:#fff;border-radius:12px;overflow:hidden;box-shadow:0 2px 10px rgba(0,0,0,.08)}
-.header{background:#0a1e3d;color:#fff;padding:40px}
-.header h1{margin:0;font-size:32px}
-.header p{margin-top:10px;color:#c7d8f5}
-.section{padding:30px 40px}
-.hero{background:#eef5ff;border-left:5px solid #1a6fd4;padding:20px;border-radius:8px}
-.pillars{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:15px;margin-top:20px}
-.card{background:#f8fbff;border:1px solid #dbe8fa;border-radius:10px;padding:15px}
-.card h3{margin-top:0;color:#0c447c}
-.cta{background:#0c447c;color:#fff;padding:25px;text-align:center}
-.btn{display:inline-block;background:#25d366;color:#fff;padding:14px 24px;text-decoration:none;border-radius:6px;font-weight:bold}
-.footer{padding:20px;text-align:center;font-size:12px;color:#666}
-ul{padding-left:18px}
+.wrap{max-width:900px;margin:auto;background:#fff;border-radius:12px;overflow:hidden;box-shadow:0 2px 12px rgba(0,0,0,.08)}
+.hdr{background:#0a1e3d;padding:30px;color:#fff}
+.brand-row{display:flex;align-items:center;gap:15px}
+.brand-row img{height:60px}
+.tagline{margin-top:12px;color:#c9d9f5}
+.hero img{width:100%;display:block}
+.body{padding:30px}
+.intro{background:#eef5ff;padding:20px;border-radius:10px;margin-bottom:25px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;margin:20px 0}
+.card{background:#f8fbff;border:1px solid #dbe8fa;padding:15px;border-radius:10px}
+.card h4{margin:0;color:#0c447c}
+.formbox{background:#f0f6ff;border:1px solid #b5d4f4;padding:20px;border-radius:10px}
+input,select{width:100%;padding:10px;margin-top:5px;border:1px solid #ccc;border-radius:6px;box-sizing:border-box}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.chk{margin:6px 0}
+.btns{margin-top:20px;display:flex;gap:10px;flex-wrap:wrap}
+button{padding:12px 18px;border:none;border-radius:6px;color:white;cursor:pointer}
+.wa{background:#25d366}
+.em{background:#1a6fd4}
+.cimop{margin-top:25px;background:#eef5ff;padding:20px;border-radius:10px}
+.cimop img{width:100%;border-radius:10px;margin-top:10px}
+.footer{background:#0a1e3d;color:#fff;padding:20px;text-align:center}
 </style>
 </head>
 <body>
-<div class="container">
 
-<div class="header">
+<div class="wrap">
+
+<div class="hdr">
+<div class="brand-row">
+<img src="./images/cyberit-logo.png" alt="Cyber I.T Masters Logo">
+<div>
 <h1>CyberEdu™ Connected Campus Program</h1>
-<p>Empowering Schools, Colleges & Training Centres Through Secure, Connected and Future‑Ready Technology</p>
+<div class="tagline">Helping Schools, Colleges & Training Centres Create Secure, Connected & Future‑Ready Learning Environments</div>
+</div>
+</div>
 </div>
 
-<div class="section">
 <div class="hero">
+<img src="./images/cyberedu-hero-banner.jpg" alt="CyberEdu Banner">
+</div>
+
+<div class="body">
+
+<div class="intro">
 <h2>Technology That Supports Learning</h2>
-<p>Cyber I.T Masters helps educational institutions create reliable digital learning environments where teachers can teach, learners can learn, and leadership can make informed technology decisions.</p>
-</div>
-</div>
-
-<div class="section">
-<h2>What Makes CyberEdu Different?</h2>
-<p>Most providers focus on IT support. CyberEdu focuses on learning outcomes, digital safety, operational continuity and strategic technology leadership.</p>
-
-<div class="pillars">
-
-<div class="card">
-<h3>Connected Learning</h3>
-<ul>
-<li>Campus Wi‑Fi Management</li>
-<li>Network Monitoring</li>
-<li>Internet Performance Management</li>
-<li>Classroom Connectivity</li>
-</ul>
+<p>CyberEdu™ helps educational institutions improve digital learning, strengthen cybersecurity, simplify technology management and provide leadership with visibility into technology performance.</p>
 </div>
 
-<div class="card">
-<h3>Safe Learning Environment</h3>
-<ul>
-<li>Content Filtering</li>
-<li>Cybersecurity Protection</li>
-<li>Email Security</li>
-<li>Safe Browsing Controls</li>
-</ul>
+<h2>What We Help Schools Achieve</h2>
+
+<div class="grid">
+<div class="card"><h4>Connected Learning</h4></div>
+<div class="card"><h4>Safe Learning Environment</h4></div>
+<div class="card"><h4>Digital Classroom Enablement</h4></div>
+<div class="card"><h4>Technology Support & Care</h4></div>
+<div class="card"><h4>Device Lifecycle Management</h4></div>
+<div class="card"><h4>Compliance & Governance</h4></div>
+<div class="card"><h4>Cyber Safety Awareness</h4></div>
+<div class="card"><h4>Technology Leadership</h4></div>
 </div>
 
-<div class="card">
-<h3>Digital Classroom Enablement</h3>
-<ul>
-<li>Microsoft 365 Education</li>
-<li>Google Workspace for Education</li>
-<li>Teacher Onboarding</li>
-<li>Collaboration Platforms</li>
-</ul>
+<div class="formbox">
+
+<h2>Request a Complimentary School Technology Assessment</h2>
+
+<div class="row">
+<div><label>Full Name *</label><input id="name"></div>
+<div><label>Role *</label><input id="role"></div>
 </div>
 
-<div class="card">
-<h3>Technology Support & Care</h3>
-<ul>
-<li>Helpdesk Services</li>
-<li>Remote Support</li>
-<li>On‑Site Assistance</li>
-<li>Classroom Technology Support</li>
-</ul>
+<div class="row">
+<div><label>Institution *</label><input id="school"></div>
+<div><label>Province *</label><input id="province"></div>
 </div>
 
-<div class="card">
-<h3>Device Lifecycle Management</h3>
-<ul>
-<li>Asset Tracking</li>
-<li>Inventory Management</li>
-<li>Warranty Tracking</li>
-<li>Replacement Planning</li>
-</ul>
+<div class="row">
+<div><label>Number of Learners</label><input id="learners"></div>
+<div><label>Number of Staff</label><input id="staff"></div>
 </div>
 
-<div class="card">
-<h3>Compliance & Governance</h3>
-<ul>
-<li>POPIA Readiness</li>
-<li>Data Protection Controls</li>
-<li>Security Policies</li>
-<li>Audit Reporting</li>
-</ul>
-</div>
+<label>Current IT Provider</label>
+<input id="provider">
 
-<div class="card">
-<h3>Cyber Safety Awareness</h3>
-<ul>
-<li>Learner Awareness Training</li>
-<li>Teacher Awareness Training</li>
-<li>Cyberbullying Prevention</li>
-<li>Digital Citizenship</li>
-</ul>
-</div>
+<label>Biggest Technology Challenge</label>
+<select id="challenge">
+<option>General Technology Assessment</option>
+<option>Poor Wi‑Fi Coverage</option>
+<option>Cybersecurity Concerns</option>
+<option>Device Management</option>
+<option>Microsoft 365 Adoption</option>
+<option>Technology Budget Planning</option>
+<option>Slow Support Response</option>
+</select>
 
-<div class="card">
-<h3>Technology Leadership</h3>
-<ul>
-<li>Technology Roadmaps</li>
-<li>Budget Planning</li>
-<li>Procurement Guidance</li>
-<li>Strategic Reviews</li>
-</ul>
+<label>Preferred Contact</label>
+<select id="contact">
+<option>WhatsApp</option>
+<option>Email</option>
+<option>Phone Call</option>
+</select>
+
+<h3>Interested In</h3>
+
+<div class="chk"><input type="checkbox" value="Connected Learning"> Connected Learning</div>
+<div class="chk"><input type="checkbox" value="Safe Learning Environment"> Safe Learning Environment</div>
+<div class="chk"><input type="checkbox" value="Digital Classroom Enablement"> Digital Classroom Enablement</div>
+<div class="chk"><input type="checkbox" value="Technology Support & Care"> Technology Support & Care</div>
+<div class="chk"><input type="checkbox" value="Device Lifecycle Management"> Device Lifecycle Management</div>
+<div class="chk"><input type="checkbox" value="Compliance & Governance"> Compliance & Governance</div>
+<div class="chk"><input type="checkbox" value="Cyber Safety Awareness"> Cyber Safety Awareness</div>
+<div class="chk"><input type="checkbox" value="Technology Leadership"> Technology Leadership</div>
+<div class="chk"><input type="checkbox" value="CIMOP School Dashboard"> CIMOP School Dashboard</div>
+
+<div class="btns">
+<button class="wa" onclick="sendWA()">Request Assessment via WhatsApp</button>
+<button class="em" onclick="sendEmail()">Request Assessment via Email</button>
 </div>
 
 </div>
+
+<div class="cimop">
+<h2>Powered by CIMOP™</h2>
+<p>Real-time visibility into device inventory, network health, support tickets, cybersecurity alerts and technology performance.</p>
+<img src="./images/cimop-dashboard-preview.jpg" alt="CIMOP Dashboard Placeholder">
 </div>
 
-<div class="section">
-<h2>Powered by CIMOP</h2>
-<p>School leadership gains visibility into devices, connectivity, support tickets, cybersecurity events and technology health through the Cyber I.T Masters Operations Platform (CIMOP).</p>
-</div>
-
-<div class="cta">
-<h2>Book a Complimentary School Technology Assessment</h2>
-<p>Discover opportunities to improve digital learning, cybersecurity and operational efficiency.</p>
-<p><a class="btn" href="https://wa.me/27726650565">Schedule via WhatsApp</a></p>
 </div>
 
 <div class="footer">
-Cyber I.T Masters | A Division of Mbulaheni Group Integrated Solutions<br>
-072 665 0565 | 087 093 1138 | cyberit@mbulahenigroup.co.za
+Cyber I.T Masters | cyberit@mbulahenigroup.co.za | 072 665 0565
 </div>
 
 </div>
+
+<script>
+const WA_NUMBER="27726650565";
+
+function selectedServices(){
+ return [...document.querySelectorAll('input[type=checkbox]:checked')].map(x=>x.value);
+}
+
+function buildMessage(){
+ let msg="CYBEREDU SCHOOL TECHNOLOGY ASSESSMENT REQUEST\n\n";
+ msg+="Institution: "+school.value+"\n";
+ msg+="Contact Person: "+name.value+"\n";
+ msg+="Role: "+role.value+"\n";
+ msg+="Province: "+province.value+"\n";
+ msg+="Learners: "+learners.value+"\n";
+ msg+="Staff: "+staff.value+"\n";
+ msg+="Current IT Provider: "+provider.value+"\n";
+ msg+="Technology Challenge: "+challenge.value+"\n\nInterested In:\n";
+ selectedServices().forEach(x=>msg+="✓ "+x+"\n");
+ msg+="\nPreferred Contact: "+contact.value;
+ return msg;
+}
+
+function sendWA(){
+ window.open("https://wa.me/"+WA_NUMBER+"?text="+encodeURIComponent(buildMessage()));
+}
+
+function sendEmail(){
+ let subject=encodeURIComponent("CyberEdu School Technology Assessment Request");
+ let body=encodeURIComponent(buildMessage());
+ window.location="mailto:cyberit@mbulahenigroup.co.za?subject="+subject+"&body="+body;
+}
+</script>
+
 </body>
 </html>
