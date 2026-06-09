@@ -72,54 +72,6 @@ button{padding:12px 18px;border:none;border-radius:6px;color:white;cursor:pointe
 
 <h2>Request a Complimentary School Technology Assessment</h2>
 
-<div class="row">
-<div><label>Full Name *</label><input id="name"></div>
-<div><label>Role *</label><input id="role"></div>
-</div>
-
-<div class="row">
-<div><label>Institution *</label><input id="school"></div>
-<div><label>Province *</label><input id="province"></div>
-</div>
-
-<div class="row">
-<div><label>Number of Learners</label><input id="learners"></div>
-<div><label>Number of Staff</label><input id="staff"></div>
-</div>
-
-<label>Current IT Provider</label>
-<input id="provider">
-
-<label>Biggest Technology Challenge</label>
-<select id="challenge">
-<option>General Technology Assessment</option>
-<option>Poor Wi‑Fi Coverage</option>
-<option>Cybersecurity Concerns</option>
-<option>Device Management</option>
-<option>Microsoft 365 Adoption</option>
-<option>Technology Budget Planning</option>
-<option>Slow Support Response</option>
-</select>
-
-<label>Preferred Contact</label>
-<select id="contact">
-<option>WhatsApp</option>
-<option>Email</option>
-<option>Phone Call</option>
-</select>
-
-<h3>Interested In</h3>
-
-<div class="chk"><input type="checkbox" value="Connected Learning"> Connected Learning</div>
-<div class="chk"><input type="checkbox" value="Safe Learning Environment"> Safe Learning Environment</div>
-<div class="chk"><input type="checkbox" value="Digital Classroom Enablement"> Digital Classroom Enablement</div>
-<div class="chk"><input type="checkbox" value="Technology Support & Care"> Technology Support & Care</div>
-<div class="chk"><input type="checkbox" value="Device Lifecycle Management"> Device Lifecycle Management</div>
-<div class="chk"><input type="checkbox" value="Compliance & Governance"> Compliance & Governance</div>
-<div class="chk"><input type="checkbox" value="Cyber Safety Awareness"> Cyber Safety Awareness</div>
-<div class="chk"><input type="checkbox" value="Technology Leadership"> Technology Leadership</div>
-<div class="chk"><input type="checkbox" value="CIMOP School Dashboard"> CIMOP School Dashboard</div>
-
 <div class="btns">
 <button class="wa" onclick="sendWA()">Request Assessment via WhatsApp</button>
 <button class="em" onclick="sendEmail()">Request Assessment via Email</button>
@@ -140,39 +92,6 @@ Cyber I.T Masters | info@mbulahenigroup.co.za | 087 093 1138
 </div>
 
 </div>
-
-<script>
-const WA_NUMBER="27726650565";
-
-function selectedServices(){
- return [...document.querySelectorAll('input[type=checkbox]:checked')].map(x=>x.value);
-}
-
-function buildMessage(){
- let msg="CYBEREDU SCHOOL TECHNOLOGY ASSESSMENT REQUEST\n\n";
- msg+="Institution: "+school.value+"\n";
- msg+="Contact Person: "+name.value+"\n";
- msg+="Role: "+role.value+"\n";
- msg+="Province: "+province.value+"\n";
- msg+="Learners: "+learners.value+"\n";
- msg+="Staff: "+staff.value+"\n";
- msg+="Current IT Provider: "+provider.value+"\n";
- msg+="Technology Challenge: "+challenge.value+"\n\nInterested In:\n";
- selectedServices().forEach(x=>msg+="✓ "+x+"\n");
- msg+="\nPreferred Contact: "+contact.value;
- return msg;
-}
-
-function sendWA(){
- window.open("https://wa.me/"+WA_NUMBER+"?text="+encodeURIComponent(buildMessage()));
-}
-
-function sendEmail(){
- let subject=encodeURIComponent("CyberEdu School Technology Assessment Request");
- let body=encodeURIComponent(buildMessage());
- window.location="mailto:info@mbulahenigroup.co.za?subject="+subject+"&body="+body;
-}
-</script>
 
 </body>
 </html>
