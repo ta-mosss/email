@@ -1,0 +1,36 @@
+<div class="dashboard-section">
+
+    <h2>Powered by CIMOP™</h2>
+
+    <p>
+        School leadership gains real-time visibility into
+        technology performance, connectivity, device health,
+        cybersecurity risks and support requests through
+        the Cyber I.T Masters Operations Platform.
+    </p>
+
+    <img
+        src="./images/cimop-dashboard-preview.jpg"
+        alt="CIMOP Education Dashboard"
+        style="
+            width:100%;
+            border-radius:10px;
+            border:1px solid #d9e4f2;
+            margin-top:15px;
+        "
+    >
+
+    <div class="dashboard-benefits">
+
+        <ul>
+            <li>Device Inventory Overview</li>
+            <li>Network & Internet Health</li>
+            <li>Security Alerts & Risks</li>
+            <li>Technology Asset Tracking</li>
+            <li>Support Ticket Visibility</li>
+            <li>Campus Technology Performance</li>
+        </ul>
+
+    </div>
+
+</div>
